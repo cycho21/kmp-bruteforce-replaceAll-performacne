@@ -21,6 +21,12 @@ public class App {
 		bannedWords.add("레노버");
 		bannedWords.add("시스템");
 
+		System.out.println("-----------79943kb-----------");
+		test.findWords(path, bannedWords);
+		test.findWordsByJava(path, bannedWords);
+		test.findWordsByKMP(path, bannedWords);
+		System.out.println("-----------1676 kb-----------");
+		path = "./test2.txt";
 		test.findWords(path, bannedWords);
 		test.findWordsByJava(path, bannedWords);
 		test.findWordsByKMP(path, bannedWords);
